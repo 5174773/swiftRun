@@ -18,7 +18,6 @@ class MainViewController: UIViewController {
 
         bgView.backgroundColor = UIColor.init(patternImage: UIImage(named: "bg.png")!)
 
-
         view.addSubview(bgView)
         
         
