@@ -15,9 +15,9 @@ target 'kkp' do
   target 'kkpUITests' do
     inherit! :search_paths
     # Pods for testing
+    
+        pod 'SnapKit', '~> 4.0.0'
 
-
-   pod 'SnapKit', '~> 3.0'
   end
 
 end

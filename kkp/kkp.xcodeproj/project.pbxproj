@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3CFBB3382E3D5956D4ECA739 /* Pods_kkpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D296C7D287054D06E3E6E0 /* Pods_kkpTests.framework */; };
-		5FD52D4624166E0B10B77F59 /* Pods_kkp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A26702AEEE504D1C6AA420F /* Pods_kkp.framework */; };
 		69B0C5DB7321D0E5F22AD3CD /* Pods_kkpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8D59A5860AD935D62B0B44 /* Pods_kkpUITests.framework */; };
 		CA65E26720DA523400886993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65E26620DA523400886993 /* AppDelegate.swift */; };
 		CA65E26920DA523400886993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65E26820DA523400886993 /* ViewController.swift */; };
@@ -19,6 +18,7 @@
 		CA65E28720DA523500886993 /* kkpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65E28620DA523500886993 /* kkpUITests.swift */; };
 		CAD952E920DA86020011C1E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD952E720DA86020011C1E3 /* MainViewController.swift */; };
 		CAD952EB20DB94440011C1E3 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD952EA20DB94440011C1E3 /* UIColor-Extension.swift */; };
+		E2F06BA04199BB2E6DBF2F16 /* Pods_kkp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A26702AEEE504D1C6AA420F /* Pods_kkp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +37,19 @@
 			remoteInfo = kkp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CA8F397820DCC80300473C52 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1A26702AEEE504D1C6AA420F /* Pods_kkp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kkp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FD52D4624166E0B10B77F59 /* Pods_kkp.framework in Frameworks */,
+				E2F06BA04199BB2E6DBF2F16 /* Pods_kkp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,6 +251,7 @@
 				CA65E25F20DA523400886993 /* Sources */,
 				CA65E26020DA523400886993 /* Frameworks */,
 				CA65E26120DA523400886993 /* Resources */,
+				CA8F397820DCC80300473C52 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -275,7 +289,7 @@
 				CA65E27E20DA523500886993 /* Sources */,
 				CA65E27F20DA523500886993 /* Frameworks */,
 				CA65E28020DA523500886993 /* Resources */,
-				729C750C56248C6F270499F8 /* [CP] Embed Pods Frameworks */,
+				3EAB61CBCCEB817A34ECC16A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -376,7 +390,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		729C750C56248C6F270499F8 /* [CP] Embed Pods Frameworks */ = {
+		3EAB61CBCCEB817A34ECC16A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -613,11 +627,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2BCA8486B67276DCBC7A1DB /* Pods-kkp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KB59FFJ586;
 				INFOPLIST_FILE = kkp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -633,11 +648,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8EE3C962302C8C439EBE9CF8 /* Pods-kkp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KB59FFJ586;
 				INFOPLIST_FILE = kkp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
