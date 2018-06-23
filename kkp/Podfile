@@ -17,6 +17,12 @@ target 'kkp' do
     # Pods for testing
     
         pod 'SnapKit', '~> 4.0.0'
+        pod 'Alamofire', '~> 4.7'
+
+
+        pod 'SolarNetwork'
+       
+
 
   end
 

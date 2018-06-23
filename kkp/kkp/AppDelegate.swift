@@ -8,18 +8,20 @@
 
 import UIKit
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         let screenSize: CGRect = UIScreen.main.bounds;
-        Display.instance.initilize(width: screenSize.width, height: screenSize.height)
+        Display.initilize(width: screenSize.width, height: screenSize.height)
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = MainViewController()
         window?.makeKeyAndVisible()
+        
+        let a = MFSIdentifier.init()
         
         
         

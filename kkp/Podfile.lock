@@ -1,16 +1,25 @@
 PODS:
+  - Alamofire (4.7.2)
   - SnapKit (4.0.0)
+  - SolarNetwork (1.0.3):
+    - Alamofire
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
   - SnapKit (~> 4.0.0)
+  - SolarNetwork
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - SnapKit
+    - SolarNetwork
 
 SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SolarNetwork: 17c4224b2cc1d15af8699e7fa4a3d279715c5aaa
 
-PODFILE CHECKSUM: 3513853d54c38373d4158db825a3bdfde17bdaa3
+PODFILE CHECKSUM: d29bafa469d3f918d0452519284bc20f1f74dfe8
 
 COCOAPODS: 1.5.3
