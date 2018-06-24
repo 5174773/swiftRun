@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import KeychainSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,10 +20,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = MainViewController()
         window?.makeKeyAndVisible()
+
+      
+        let keychain = KeychainSwift();
+        var solecode = "";
+        if(keychain.get("solecode")==nil){
+            let now = NSDate()
+            let timeInterval:TimeInterval = now.timeIntervalSince1970
+            let timeStamp = String(timeInterval)
+            let startSlicingIndex = timeStamp.index(timeStamp.startIndex, offsetBy: 5)
+            let subvalues = timeStamp[startSlicingIndex...]
+            let uuid = UUID().uuidString
+            solecode = uuid + subvalues
+            solecode += String(arc4random())
+            keychain.set(solecode, forKey: solecode)
+        }else{
+            solecode = keychain.get("solecode")!
+        }
         
-        let a = MFSIdentifier.init()
         
-        
+        print(solecode)
+
+    
+     
         
         return true
     }

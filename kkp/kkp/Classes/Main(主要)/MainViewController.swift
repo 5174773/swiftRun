@@ -8,7 +8,6 @@
 
 import UIKit
 import SnapKit
-
 class MainViewController: UIViewController {
     var box = UIView()
     var titleLabel = UILabel() //标题标签

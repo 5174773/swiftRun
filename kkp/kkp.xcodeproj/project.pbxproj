@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3CFBB3382E3D5956D4ECA739 /* Pods_kkpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3D296C7D287054D06E3E6E0 /* Pods_kkpTests.framework */; };
 		69B0C5DB7321D0E5F22AD3CD /* Pods_kkpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A8D59A5860AD935D62B0B44 /* Pods_kkpUITests.framework */; };
+		CA02E9DF20DE2F94005E721D /* HTTPTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA02E9DE20DE2F94005E721D /* HTTPTool.swift */; };
 		CA65E26720DA523400886993 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65E26620DA523400886993 /* AppDelegate.swift */; };
 		CA65E26920DA523400886993 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65E26820DA523400886993 /* ViewController.swift */; };
 		CA65E26C20DA523400886993 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA65E26A20DA523400886993 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 		CA65E27120DA523500886993 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA65E26F20DA523500886993 /* LaunchScreen.storyboard */; };
 		CA65E27C20DA523500886993 /* kkpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65E27B20DA523500886993 /* kkpTests.swift */; };
 		CA65E28720DA523500886993 /* kkpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA65E28620DA523500886993 /* kkpUITests.swift */; };
+		CABE4ABD20DE2DA5008E9718 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = CABE4ABC20DE2DA5008E9718 /* Service.swift */; };
 		CAD952E920DA86020011C1E3 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD952E720DA86020011C1E3 /* MainViewController.swift */; };
 		CAD952EB20DB94440011C1E3 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD952EA20DB94440011C1E3 /* UIColor-Extension.swift */; };
 		CAFA3B0120DD292800813DC2 /* DisplayUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFA3B0020DD292800813DC2 /* DisplayUtils.swift */; };
@@ -62,6 +64,7 @@
 		A2BCA8486B67276DCBC7A1DB /* Pods-kkp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kkp/Pods-kkp.debug.xcconfig"; sourceTree = "<group>"; };
 		AC066F80909382D267CECC63 /* Pods-kkpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-kkpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-kkpUITests/Pods-kkpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C3D296C7D287054D06E3E6E0 /* Pods_kkpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_kkpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA02E9DE20DE2F94005E721D /* HTTPTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTool.swift; sourceTree = "<group>"; };
 		CA65E26320DA523400886993 /* kkp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kkp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA65E26620DA523400886993 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA65E26820DA523400886993 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +78,7 @@
 		CA65E28220DA523500886993 /* kkpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = kkpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA65E28620DA523500886993 /* kkpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kkpUITests.swift; sourceTree = "<group>"; };
 		CA65E28820DA523500886993 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CABE4ABC20DE2DA5008E9718 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		CAD952E720DA86020011C1E3 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CAD952EA20DB94440011C1E3 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		CAFA3B0020DD292800813DC2 /* DisplayUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayUtils.swift; sourceTree = "<group>"; };
@@ -185,9 +189,19 @@
 			path = kkpUITests;
 			sourceTree = "<group>";
 		};
+		CABE4AB720DE29F3008E9718 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				CABE4ABC20DE2DA5008E9718 /* Service.swift */,
+				CA02E9DE20DE2F94005E721D /* HTTPTool.swift */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
 		CAD952DF20DA86020011C1E3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CABE4AB720DE29F3008E9718 /* Net */,
 				CAFA3AFF20DD291700813DC2 /* Utils */,
 				CAD952EA20DB94440011C1E3 /* UIColor-Extension.swift */,
 				CAD952E020DA86020011C1E3 /* Home(首页) */,
@@ -263,6 +277,7 @@
 				CA65E26020DA523400886993 /* Frameworks */,
 				CA65E26120DA523400886993 /* Resources */,
 				CA8F397820DCC80300473C52 /* Embed Frameworks */,
+				1B9559ADFBD6B3E6CF196726 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,7 +315,6 @@
 				CA65E27E20DA523500886993 /* Sources */,
 				CA65E27F20DA523500886993 /* Frameworks */,
 				CA65E28020DA523500886993 /* Resources */,
-				3EAB61CBCCEB817A34ECC16A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -401,26 +415,34 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3EAB61CBCCEB817A34ECC16A /* [CP] Embed Pods Frameworks */ = {
+		1B9559ADFBD6B3E6CF196726 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-kkpUITests/Pods-kkpUITests-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-kkp/Pods-kkp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SolarNetwork/SolarNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SolarNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kkpUITests/Pods-kkpUITests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-kkp/Pods-kkp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		80E9F40474A37DD6113C952B /* [CP] Check Pods Manifest.lock */ = {
@@ -469,7 +491,9 @@
 				CAFA3B0120DD292800813DC2 /* DisplayUtils.swift in Sources */,
 				CA65E26920DA523400886993 /* ViewController.swift in Sources */,
 				CAD952EB20DB94440011C1E3 /* UIColor-Extension.swift in Sources */,
+				CA02E9DF20DE2F94005E721D /* HTTPTool.swift in Sources */,
 				CA65E26720DA523400886993 /* AppDelegate.swift in Sources */,
+				CABE4ABD20DE2DA5008E9718 /* Service.swift in Sources */,
 				CAD952E920DA86020011C1E3 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -655,10 +679,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.kkp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Targets-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -678,10 +702,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "-.kkp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Targets-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PODS_ROOT)/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
