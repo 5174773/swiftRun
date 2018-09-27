@@ -2,12 +2,7 @@ PODS:
   - Alamofire (4.7.2)
   - Cache (5.0.0)
   - KeychainSwift (11.0.0)
-  - Moya (11.0.2):
-    - Moya/Core (= 11.0.2)
-  - Moya/Core (11.0.2):
-    - Alamofire (~> 4.1)
-    - Result (~> 3.0)
-  - Result (3.2.4)
+  - ObjectMapper (3.3.0)
   - SnapKit (4.0.0)
   - SwiftyJSON (4.1.0)
 
@@ -15,7 +10,7 @@ DEPENDENCIES:
   - Alamofire
   - Cache
   - KeychainSwift (~> 11.0)
-  - Moya (~> 11.0)
+  - ObjectMapper (~> 3.3)
   - SnapKit (~> 4.0.0)
   - SwiftyJSON (~> 4.0)
 
@@ -24,8 +19,7 @@ SPEC REPOS:
     - Alamofire
     - Cache
     - KeychainSwift
-    - Moya
-    - Result
+    - ObjectMapper
     - SnapKit
     - SwiftyJSON
 
@@ -33,11 +27,10 @@ SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   Cache: fae4826ba52d7a5d9a3a0ad6fe73e3501a82964f
   KeychainSwift: bea6bd9f98af7b8d7ca4aa79fe105c00fab532db
-  Moya: a725035953bc1c0eb1be505ab903984501d82440
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 357da1aeecd859725e6f1143fb80728d4092fd81
+PODFILE CHECKSUM: 2c93041ab5c9ed2faa1ccf51a04965745295d7f1
 
 COCOAPODS: 1.5.3

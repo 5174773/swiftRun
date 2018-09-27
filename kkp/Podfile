@@ -10,7 +10,7 @@ target 'kkp' do
   pod 'Cache'
   pod 'Alamofire'
   pod 'SwiftyJSON', '~> 4.0'
-  pod 'Moya', '~> 11.0'
+  pod 'ObjectMapper', '~> 3.3'
   # Pods for kkp
 
   target 'kkpTests' do
